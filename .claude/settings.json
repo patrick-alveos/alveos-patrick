@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Read",
+      "Glob",
+      "Grep",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(echo:*)",
+      "Bash(pwd:*)",
+      "Bash(which:*)",
+      "Bash(whoami:*)",
+      "Bash(date:*)",
+      "Bash(env:*)",
+      "Bash(printenv:*)",
+      "Bash(uname:*)",
+      "Bash(df:*)",
+      "Bash(du:*)",
+      "Bash(ps:*)",
+      "Bash(top:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git branch:*)",
+      "Bash(git show:*)",
+      "Bash(git remote:*)",
+      "Bash(git fetch:*)",
+      "Bash(git stash list:*)",
+      "Bash(curl:*)",
+      "Bash(node:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(npm list:*)",
+      "Bash(npm run:*)",
+      "Bash(jq:*)"
+    ]
+  }
+}

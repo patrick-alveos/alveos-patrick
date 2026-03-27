@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"/Users/patrick_alveos/Claude code repos/.claude/skills/research\")",
+      "Bash(cp \"/Users/patrick_alveos/Claude code repos/alveos/.claude/skills/research/SKILL.md\" \"/Users/patrick_alveos/Claude code repos/.claude/skills/research/SKILL.md\")",
+      "Bash(rm -rf \"/Users/patrick_alveos/Claude code repos/alveos/.claude/skills\")"
+    ]
+  }
+}
