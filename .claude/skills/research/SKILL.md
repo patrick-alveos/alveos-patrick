@@ -25,40 +25,29 @@ This context will inform which of the research findings are most relevant to sur
 
 ---
 
-## Step 2 — Broad research (target 50–100 signals)
+## Step 2 — Research (6–8 targeted searches)
 
-Use web search extensively across the following angles. Run **multiple targeted searches** to build a wide pool of signals before filtering.
+Run **6–8 web searches** directly (do NOT spawn sub-agents — keep everything in a single context to conserve tokens). Each search should cover a distinct angle.
 
-### Search angles to cover:
-- **Product launches & announcements**: new wearables, health trackers, smart rings, patches, hearables, smart clothing announced or released within the time window
-- **Funding & M&A**: funding rounds, acquisitions, partnerships in the wearable/digital health space
-- **Regulatory**: FDA clearances, CE markings, SaMD approvals for wearable health devices
-- **Research & clinical**: academic papers, clinical trials, university research on wearable sensing, respiratory monitoring, HRV, sleep, autonomic nervous system, breathing biomarkers
-- **Consumer trends**: press coverage of wearable adoption, user behaviour, market reports
-- **Breathing & respiratory specifically**: any new product, study, or company working on respiratory rate, breathing patterns, nasal/oral airflow, sleep disordered breathing, or respiratory biometrics
-- **Larger players**: Apple Watch, Garmin, Fitbit/Google, Samsung Galaxy, Oura, Whoop, Ultrahuman, Polar, Suunto, Withings — any notable updates
-- **Smaller/emerging players**: startups, Kickstarter/Indiegogo campaigns, university spinouts in the wearable health space
+### Required searches (run these 6):
+1. `wearable health news [month] [year]` — product launches, major player updates
+2. `wearable startup funding [month] [year]` — funding rounds, M&A, partnerships
+3. `respiratory rate breathing wearable [year]` — breathing/respiratory devices and research
+4. `FDA clearance wearable health device [year]` — regulatory developments
+5. `Oura Whoop Ultrahuman news [month] [year]` — direct competitor updates
+6. `acoustic sensor health wearable [year]` — acoustic sensing tech (most relevant to Alveos)
 
-### Search query ideas (adapt as needed):
-- `wearable health tracker launch [year]`
-- `wearable startup funding [month] [year]`
-- `respiratory rate wearable`
-- `breathing wearable device`
-- `FDA clearance wearable [timeframe]`
-- `smart ring new release`
-- `HRV wearable research`
-- `autonomic nervous system wearable`
-- `sleep wearable clinical study`
-- `acoustic sensor wearable`
-- `digital biomarker wearable startup`
+### Optional searches (add 1–2 if the above missed key angles):
+7. `smart ring new release [year]`
+8. `sleep wearable clinical study [year]`
 
-Aim for breadth. Run at least 10–15 distinct searches. Collect all findings before filtering.
+Collect findings from all searches before filtering. Target 20–30 raw signals.
 
 ---
 
 ## Step 3 — Filter to top 5–10 signals
 
-From your pool of 50–100 items, select the **5–10 most impactful** for Alveos. Prioritise:
+From your pool of 20–30 items, select the **5–8 most impactful** for Alveos. Prioritise:
 
 1. **Directly competitive**: any device doing respiratory, breathing, or acoustic sensing
 2. **Category-defining**: moves by major players that set market expectations (features, pricing, UX)
@@ -109,12 +98,9 @@ Structure the output exactly as follows:
 
 ---
 
-## All Sources
+## Sources
 
-| # | Title | URL | Date |
-|---|-------|-----|------|
-| 1 | ... | ... | ... |
-[Full list of all sources consulted, including ones not in the top 10]
+[List only the sources cited in Key Industry Updates above — no need to list every search result]
 ```
 
 ---
