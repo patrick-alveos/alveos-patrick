@@ -25,29 +25,41 @@ This context will inform which of the research findings are most relevant to sur
 
 ---
 
+## Step 1b — Read the most recent prior report (deduplication)
+
+Before searching, **read the most recent existing report** in `Competitor_agent/` (sort by filename — highest date = most recent). Extract a list of **already-covered story headlines and company names**. You will use this as an exclusion list in Step 3.
+
+If no prior report exists, skip this step.
+
+---
+
 ## Step 2 — Research (6–8 targeted searches)
 
 Run **6–8 web searches** directly (do NOT spawn sub-agents — keep everything in a single context to conserve tokens). Each search should cover a distinct angle.
 
+**Use tight date ranges.** Include the specific week's dates in queries (e.g., `"June 2026" after:2026-06-08`) so search engines surface fresh results rather than returning evergreen content published weeks ago.
+
 ### Required searches (run these 6):
-1. `wearable health news [month] [year]` — product launches, major player updates
+1. `wearable health news [specific week date range e.g. "June 8-15 2026"]` — product launches, major player updates
 2. `wearable startup funding [month] [year]` — funding rounds, M&A, partnerships
-3. `respiratory rate breathing wearable [year]` — breathing/respiratory devices and research
-4. `FDA clearance wearable health device [year]` — regulatory developments
-5. `Oura Whoop Ultrahuman news [month] [year]` — direct competitor updates
-6. `acoustic sensor health wearable [year]` — acoustic sensing tech (most relevant to Alveos)
+3. `respiratory rate breathing wearable [month] [year]` — breathing/respiratory devices and research
+4. `FDA wearable health device [month] [year]` — regulatory developments
+5. `Oura Whoop Ultrahuman news [specific week]` — direct competitor updates
+6. `acoustic sensor health wearable [month] [year]` — acoustic sensing tech (most relevant to Alveos)
 
 ### Optional searches (add 1–2 if the above missed key angles):
-7. `smart ring new release [year]`
-8. `sleep wearable clinical study [year]`
+7. `smart ring launch review [month] [year]`
+8. `sleep wearable clinical study [month] [year]`
 
 Collect findings from all searches before filtering. Target 20–30 raw signals.
 
 ---
 
-## Step 3 — Filter to top 5–10 signals
+## Step 3 — Filter to top 5–8 signals (deduplicate first)
 
-From your pool of 20–30 items, select the **5–8 most impactful** for Alveos. Prioritise:
+**Before scoring signals for relevance, remove any signal that was already covered in the prior report** (from Step 1b). A signal is a duplicate if it covers the same company announcement, the same funding round, the same regulatory update, or the same research paper — even if the new search returned it again. Only carry forward stories that are **new since the prior report's date**.
+
+From the remaining pool, select the **5–8 most impactful** for Alveos. Prioritise:
 
 1. **Directly competitive**: any device doing respiratory, breathing, or acoustic sensing
 2. **Category-defining**: moves by major players that set market expectations (features, pricing, UX)
@@ -55,7 +67,9 @@ From your pool of 20–30 items, select the **5–8 most impactful** for Alveos.
 4. **Scientific validation**: research that supports or complicates Alveos's biomarker claims (RRV, NSI, oral/nasal ratio)
 5. **Distribution or partnership moves**: anything that changes how wearables reach consumers
 
-Discard: generic fitness tracker updates, unrelated medical devices, duplicate coverage of the same story.
+Discard: generic fitness tracker updates, unrelated medical devices, duplicate coverage of the same story, **and anything already in last week's report**.
+
+**If fewer than 3 genuinely new signals exist**, say so explicitly in the report intro rather than padding with stale content. A short honest report beats a long one full of recycled news.
 
 ---
 
